@@ -7,9 +7,10 @@ class Account {
     private:
     string name;
     int balance {0};
+    int withdrawal;
 
     public:
-    Account(string accountName, int initialBalance)
+    Account(string accountName, int initialBalance, int retiro)
     : name{accountName}{
 
     if(initialBalance < 0){
@@ -30,5 +31,4 @@ class Account {
     string getName() const {
         return name;
     }
-
 };
