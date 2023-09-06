@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 using namespace std;
 
 int main()
@@ -47,8 +47,8 @@ int main()
     else if (MHR4 < min) {
         min = MHR4;
     }
-    cout << "Los valores MHR mas grandes y mas pequeños calculados son: " << max << " y " << min;
+    cout << "Los valores MHR mas grandes y mas pequeï¿½os calculados son: " << max << " y " << min;
     
 
     return 0;
-}*/
+}

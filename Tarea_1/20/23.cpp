@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -35,4 +35,4 @@ int main() {
 		cout << "e es el mayor numero" << "\n";
 	}
 	return 0;
-}*/
+}

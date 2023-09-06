@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -17,10 +17,10 @@ int main() {
 	cout << "La suma es: " << suma << "\n";
 
 	if (suma % 2 == 0) {
-		cout << "la suma es par" << "\n";
+		cout << "su suma es par" << "\n";
 	}
 	else {
-		cout << "la suma se impar" << "\n";
+		cout << "su suma se impar" << "\n";
 	}
 	return 0;
-}*/
+}
