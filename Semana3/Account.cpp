@@ -33,7 +33,7 @@ int main() {
     cout << "\n\nEnter whithdrawal amount for account1: ";
     int whithdrawal;
     cin >> whithdrawal;
-    cout << " resta " << whithdrawal << "to account1 whithdrawal" << "\n";
+    cout << "subtract " << whithdrawal << " to account1 whithdrawal" << "\n";
     account1.retiro(whithdrawal);
     cout << "\n";
 

@@ -44,13 +44,13 @@ llamada retirar que retire dinero de una Cuenta. Asegúrese de que el importe re
 no supere el saldo de la Cuenta. Si lo hace, el saldo no debe modificarse y la función miembro
 debe mostrar un mensaje indicando "El importe retirado excede el saldo de la cuenta".
 Modifique la clase AccountTest (Fig. 3.9) para probar la función miembro retirar.*/
+    
     void retiro(int withdrawalAmount) {
         if (withdrawalAmount > 0 && withdrawalAmount <= balance) {
             balance -= withdrawalAmount;
         }
         else {
-            // Manejar el caso en que el retiro no es válido, por ejemplo, mostrar un mensaje de error
-            std::cout << "Retiro no válido. El saldo actual es insuficiente o el monto de retiro es negativo." << std::endl;
+            cout << "Retiro no válido. El saldo actual es insuficiente o el monto de retiro es negativo." << endl;
         }
     }
      int getwithdrawal() {
