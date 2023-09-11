@@ -27,7 +27,7 @@ public:
         : num_pieza(numpieza), des_pieza(despieza), cant_pieza(cantpieza), prec_art(precart), vat(vat_), desc(desc_) {
     }
     void setnum_pieza(string numpieza) {
-         num_pieza = numpieza;
+        num_pieza = numpieza;
     }
     void setdes_pieza(string despieza) {
         des_pieza = despieza;
@@ -59,28 +59,26 @@ public:
     string getdes_pieza() {
         return des_pieza;
     }
-    
+
     int getcant_pieza() {
         return cant_pieza;
     }
-    
+
     int getprec_art() {
         return prec_art;
     }
-    
+
     double getvat() {
         return vat;
     }
-    
+
     double getdesc() {
         return desc;
     }
-    
+
     double getnvoiceAmount() {
         double recibo = (cant_pieza * prec_art) + vat;
+        recibo = recibo - (desc / 100);
         return recibo;
     }
-
-    
-    
 };
