@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    Account user1{ "Rodrigo", -7 , 0 };
+    Account user1{ "Rodrigo", 0 , 0 };
     user1.Display();
 
     return 0;

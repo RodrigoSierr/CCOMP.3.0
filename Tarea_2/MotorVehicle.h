@@ -54,6 +54,7 @@ public:
 		return engineCapacity;
 	}
 	void displatCarDetails() {
+		cout << "\n";
 		cout << "\t" <<"Car Details" << endl;
 		cout << "The make is: " << getmake() << endl;
 		cout << "FuelType is: " << getfueltype() << endl;
