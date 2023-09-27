@@ -21,27 +21,27 @@ bool es_primo(int numero) {
 
 int main() {
     int n;
-    std::cout << "Ingrese un número n: ";
-    std::cin >> n;
+    cout << "Ingrese un número n: ";
+    cin >> n;
 
     if (n <= 0) {
-        std::cout << "El número debe ser positivo." << std::endl;
+        cout << "El número debe ser positivo." << endl;
         return 1;
     }
 
-    std::cout << "Los primeros " << n << " números primos son:" << std::endl;
+    cout << "Los primeros " << n << " números primos son:" << endl;
     int numero = 2;
     int encontrados = 0;
 
     while (encontrados < n) {
         if (es_primo(numero)) {
-            std::cout << numero << " ";
+            cout << numero << " ";
             ++encontrados;
         }
         ++numero;
     }
 
-    std::cout << std::endl;
+    cout << endl;
 
     return 0;
 }
