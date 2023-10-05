@@ -48,17 +48,16 @@ public:
     }
 };
 
-class Agilidad : public Heroe {
+class Fuerza : public Heroe {
 public:
-    Agilidad(string nombre, string historia, Estadisticas estadisticas)
+    Fuerza(string nombre, string historia, Estadisticas estadisticas)
         : Heroe(nombre, historia, estadisticas) {
     }
 
     string obtenerTipo() const override {
-        return "Agilidad";
+        return "Fuerza";
     }
 };
-
 class Universal : public Heroe {
 public:
     Universal(string nombre, string historia, Estadisticas estadisticas)
@@ -70,16 +69,7 @@ public:
     }
 };
 
-class Fuerza : public Heroe {
-public:
-    Fuerza(string nombre, string historia, Estadisticas estadisticas)
-        : Heroe(nombre, historia, estadisticas) {
-    }
 
-    string obtenerTipo() const override {
-        return "Fuerza";
-    }
-};
 
 class Inteligencia : public Heroe {
 public:
@@ -102,3 +92,15 @@ public:
         return "Creep";
     }
 };
+
+class Agilidad : public Heroe {
+public:
+    Agilidad(string nombre, string historia, Estadisticas estadisticas)
+        : Heroe(nombre, historia, estadisticas) {
+    }
+
+    string obtenerTipo() const override {
+        return "Agilidad";
+    }
+};
+
